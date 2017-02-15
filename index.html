@@ -1,0 +1,57 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game! </title>
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body onload="startup()" id="main">
+
+    <div id="container">
+      <div id ="header">
+        <h1 id="welcom">
+        Welcome to Hangman Game!
+        </h1>
+        <br>
+      </div>
+      <p>
+        Guess what word I'm thinking of
+      </p>
+      <br><br>
+      <input type="text" id="letter" size=6>
+      <button id="btn1" onclick="Letter()"  class="btn btn-success" > Play</button>
+      <button id="btn1" onclick="Reset()"  class="btn btn-info" > Start New Game!</button>
+      <br><br>
+
+     
+      <div id="playboard">
+        <img src="assets/image/hangman10.jpg">
+      </div>
+
+      <div id="preload">
+    <img src="assets/image/hangman0.jpg">
+    <img src="assets/image/hangman1.jpg">
+    <img src="assets/image/hangman2.jpg">
+    <img src="assets/image/hangman3.jpg">
+    <img src="assets/image/hangman4.jpg">
+    <img src="assets/image/hangman5.jpg">
+    <img src="assets/image/hangman6.jpg">
+  </div>
+      <br>
+
+      <span id="answer"> </span>
+      <br> <br>
+      <p> you have <span id="lives"> 10 </span> lives left.</p>
+      <br>
+      <span id= "word"></span>
+      <br>
+      <p>Letters Already Guessed: <span id= "userguess"> </span> </p>
+    <span id="sound"></span>
+   
+        </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

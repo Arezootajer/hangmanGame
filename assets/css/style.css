@@ -1,0 +1,23 @@
+
+#welcom {
+  font-family: 'Tangerine', serif;
+  font-size: 60px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+#container{
+	width:50%;
+	border-radius:5px;
+	padding:10px;
+	margin:10% auto;
+	text-align: center;
+}
+
+#preload
+{ 
+	display: none;
+}
+
+p{
+	font-size: 30px;
+}
